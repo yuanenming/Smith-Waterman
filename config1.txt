@@ -1,0 +1,75 @@
+//Welcome!
+// This is the configuration file for SmithWaterman.
+
+//Please set the parameters for your needs
+// by directly modifying the text(The program will read
+// and analyze them).
+
+//Lines begin with "//" with be recognized as comments and be ignored.
+
+//If you're not sure about what those parameters mean,
+//  please read the ReadMe file.
+
+//Both integers and float numbers are accepted for numerical parameters, 
+//  but scientific notation is NOT supported.
+
+//The value of a parameter should be on the next line to the parameter name.
+
+//Warning：Malicious editing on this file may result to crash. 
+
+
+
+//SCORING MATRIX
+//
+//example:
+//	s=
+//	3 -3 -3 -3
+//	-3 3 -3 -3
+//	-3 -3 3 -3
+//	-3 -3 -3 3
+//	denotes:
+//	     A  C  T  G
+//    A  3 -3 -3 -3
+//    C -3  3 -3 -3
+//    G -3 -3  3 -3
+//    T -3 -3 -3  3
+//The programme will start to read the matrix after "s=", 
+//  please DO NOT insert any character into the matrix area besides
+//  your scoring matrix elements, otherwise there'll be fatal or unknown error.
+
+s=
+3 -3 -3 -3
+-3 3 -3 -3
+-3 -3 3 -3
+-3 -3 -3 3
+
+
+
+//GAP PENALTY FACTORS
+//
+//For gap with k step, the penalty will be
+//  W(k)=a*k+b
+//where k is a positive integer.
+
+a=
+2
+b=
+0
+
+
+
+//REPORT ENABLED
+//A brief report about the result will be appended 
+//  to the result.txt if enabled.
+//example:
+//      ----------------------------------------
+//      Report
+//		id : 1
+//      sequence A length : 2000
+//      sequence B length : 2000
+//      aligned sequence length: 1500
+//      matched pairs in aligned sequences: 1200
+//	    ----------------------------------------
+
+report=
+on
